@@ -1,0 +1,139 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+form * {
+    /* display: block; */
+    box-sizing: border-box
+}
+
+.form-field {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+main {
+
+    display: flex;
+
+    /*gap: 40px;*/
+
+}
+
+.new-product {
+
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.products {
+
+    background-color: rgb(220, 253, 255);
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products ul {
+    list-style: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.heading h3 {
+    background-color: #272727;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.product {
+
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.product h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.product-content {
+
+    display: flex;
+    gap: 40px;
+
+}
+
+.product-title {
+
+    width: 100%;
+
+}
+
+.product-image img {
+
+    height: 100px;
+
+}
+
+.product-description {
+
+    width: 100%;
+    
+}
+
+input,
+button,
+select,
+textarea {
+
+    padding: 10px;
+    border: 2px solid #CCC;
+    width: 400px;
+}
+
+label {
+
+    margin-bottom: 0.4rem;
+
+}
+
+input:required:invalid,
+input:focus:invalid {
+    background-color: rgb(255, 252, 243);
+}
+
+
+input:required:valid {
+    /* background-color: rgb(224, 255, 218); */
+    border: 2px solid rgb(69, 69, 69);
+    background-color: #FFFFFF;
+}
+
+form a {
+
+    margin-left: 20px;
+
+}
+
+.remove {
+    padding: 10px;
+}

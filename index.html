@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    <title>Formulär</title>
+
+</head>
+
+<body>
+    <main>
+        <section class="new-product">
+            <form id="forms">
+                <h1>Ny produkt</h1>
+
+                <label for="name">Namn</label>
+                <div class="form-field">
+                    <input type="text" placeholder="Namn" id="name" name="name" minlength="3" maxlength="50" required>´
+                    <a></a>
+                </div>
+
+                <label for="description">Beskrivning</label>
+                <div class="form-field">
+                    <textarea name="description" placeholder="Beskrivning" id="description"></textarea>
+                    <a></a>
+                </div>
+
+                <label for="picture">Bild</label>
+                <div class="form-field">
+                    <input type="file" name="picture" id="picture">
+                    <a></a>
+                </div>
+
+                <label for="date">Publiceringsdatum</label>
+                <div class="form-field">
+                    <input type="date" name="date" id="date">
+                    <a></a>
+                </div>
+
+                <label for="price">Pris</label>
+                <div class="form-field">
+                    <input type="number" minlength="2" maxlength="4" name="price">
+                    <a></a>
+                </div>
+
+                <label for="articlenumber">Artikelnummer (ABC-AB12)</label>
+                <div class="form-field">
+                    <input type="text" name="articlenumber" id="articlenumber" pattern="[A-Z]{3}[x-][A-Z]{2}[0-9]{2}"
+                        maxlength="8" required>
+                    <a></a>
+                </div>
+
+                <label for="category">Kategori</label>
+                <div class="form-field">
+                    <select id="category" name="category">
+                        <optgroup label="Skithuspapper">
+                            <option value="Mjukt">Mjukt</option>
+                            <option value="Hård">Hård</option>
+                        </optgroup>
+
+                        <optgroup label="Skrivarpapper">
+                            <option value="A4">A4</option>
+                            <option value="Vykort">Vykort</option>
+                        </optgroup>
+                    </select>
+                    <a></a>
+                </div>
+                <input type="submit" value="Lägg till" class="submit">
+
+            </form>
+        </section>
+        <section class="products">
+            <div class="heading">
+                <h1>Produkter</h1>
+                <h3>Radera produkter</h3>
+            </div>
+
+            <ul class="product-list">
+
+            </ul>
+
+        </section>
+    </main>
+</body>
+
+</html>
