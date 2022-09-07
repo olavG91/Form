@@ -123,7 +123,6 @@ input:focus:invalid {
 
 
 input:required:valid {
-    /* background-color: rgb(224, 255, 218); */
     border: 2px solid rgb(69, 69, 69);
     background-color: #FFFFFF;
 }
