@@ -22,7 +22,7 @@ main {
 }
 
 .products {
-    background-color: rgb(220, 253, 255);
+    background-color: rgb(36, 171, 179);
     width: 100%;
     padding: 20px;
     display: none;
@@ -79,7 +79,8 @@ main {
 input,
 button,
 select,
-textarea {
+textarea,
+button {
     padding: 10px;
     border: 2px solid #CCC;
     width: 400px;
